@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit Maze Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="rabbit"></div>
+        <div id="home"></div>
+        <div class="wall"></div>
+        <div class="wall" style="top: 100px; left: 100px;"></div>
+        <div class="wall" style="top: 200px; left: 200px;"></div>
+        <!-- Add more walls and obstacles here -->
+    </div>
+
+    <script src="script.js"></script>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    border: 2px solid #333;
+}
+
+#rabbit {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+.wall {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    /* Define other styles for walls */
+}
+
+#home {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+}
+</body>
+</html>
